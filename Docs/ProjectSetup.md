@@ -1,43 +1,43 @@
-# Project Setup
+# 项目配置
 
-Requirements
+要求
 ---
-* Unity Version `2021.3.16f1`
-  * Only SLZ-URP compatible shaders will render properly
-* Basic Unity Knowledge
+* Unity版本 `2021.3.16f1`
+  * 只有与SLZ-URP兼容的着色器才能正常渲染
+* 基础Unity知识
 
-Project Setup
+项目配置
 ---
-Watch the step-by-step <b>MarrowSDK [Project Setup Guide](https://www.youtube.com/watch?v=U5jynJcDjvo)</b>, the <b>[Getting Started Guide](https://www.youtube.com/watch?v=M4B0TOG-b94)</b> on YouTube or follow the written guide below.
+在Youtube（需要网络环境）观看逐步<b>MarrowSDK[项目设置指南视频](https://www.youtube.com/watch?v=U5jynJcDjvo)</b>，和<b>[起始指南视频](https://www.youtube.com/watch?v=M4B0TOG-b94)</b>或按照下面的书面指南进行操作。
 
 
-## Download and Install Unity
+## 下载并安装Unity
 
-- Download [Unity Hub](https://unity.com/download). 
-- If you already have Unity Hub installed (recommended), you can quickly install Unity version `2021.3.16f` by copying the following unityhub link into a browser: `unityhub://2021.3.16f1`.  The [Unity Hub](https://unity3d.com/get-unity/download) is recommended to help manage different versions of Unity and multiple projects.  Otherwise, [download](https://unity3d.com/get-unity/download/archive) Unity `2021.3.16f` manually from the Unity Archives. 
-- When installing Unity `2021.3.16f`, be sure to include the following modules: Under <b>Platforms</b>, select *Android Build Support* and it's sub-items, *Android SDK & NDK Tools* and the *OpenJDK*.  Lower down the list, add *Windows Build Support (IL2CPP)*.
+- 下载[Unity Hub](https://unity.com/download). 
+- （推荐做法）如果您已经安装了Unity Hub，您可以通过将以下unityhub链接复制到浏览器中来快速安装我们需要的Unity版本: `unityhub://2021.3.16f1`。推荐使用[Unity Hub](https://unity3d.com/get-unity/download)来帮助管理不同版本的Unity和多个项目。此外，[在此通过Unity归档页下载](https://unity3d.com/get-unity/download/archive)Unity `2021.3.16f`以供手动安装
+- 安装Unity `2021.3.16f`时，请务必包含以下模块：在<b>平台（Platforms）</b>下，勾选*Android Build Support*及其子项目，*Android SDK & NDK Tools*和*OpenJDK*。在列表的下方，添加*Windows Build Support (IL2CPP)*。
 
 ![Image](./Images/UnityProjectModules/android_platform.png) ![Image](./Images/UnityProjectModules/windows_platform.png)
 
-- Once Unity is installed, create a <b>New Project</b>.  If you have other Unity Editor versions, be sure to select `2021.3.16f` from the list at the top of the window. 
+- 安装Unity后，创建一个<b>新项目</b>。如果您有其他Unity编辑器版本，请务必从窗口顶部的列表中确定是选择`2021.3.16f`。
 
 ![3dcore](./Images/UnityProjectModules/hub3dcore_install.png)
-- Create a new `3D Core` project for your mod. (Note this change from older MarrowSDK versions... do <i><b>not</b></i> choose 3D (URP))  
+- 为您的模组创建一个新的`3D Core`项目。（或者3D Built-in Render Pipeline）（注意这一步与MarrowSDK老版本的此变化…<i><b>千万不要</b></i>选择3D URP)  
 
-## Add the SLZ Scoped Registry
+## 添加SLZ范围注册表
 
-- Select `Window` → `Package Manager` → `Gear Icon` → `Advanced Project Settings`
+- 点进`Window（窗口）` → `Package Manager（包管理器）` → `齿轮图标` → `Advanced Project Settings（高级项目设置）`
 
 ![AdvancedProjSettings](./Images/UnityProjectModules/add_scoped_registry.gif)
 
-#### Copy each line into the new scoped registry
+#### 将每行复制到新的范围注册表中
 
 ![scopedregistry](./Images/UnityProjectModules/scoped_registry_copypaste.gif)
 
 > [!IMPORTANT]
-> <img align="center" src="./Images/UnityProjectModules/important_copy.gif" /> Use the copy button on the right of each line to avoid errors
+> <img align="center" src="./Images/UnityProjectModules/important_copy.gif" /> 使用每行右侧的复制按钮来避免打错
 
-> Name 
+> Name
 ```
 SLZ
 ```
@@ -55,12 +55,12 @@ com.unity.render-pipelines
 ```
 com.unity.shadergraph
 ```
-- Click Save.
+- 点击Save保存关掉窗口
 
-Next, be sure `Packages: My Registries` is selected in the Project Manager Window and select `Marrow SDK` under the <b>Stress Level Zero</b> menu.
+接下来，确定包管理器中`Packages: My Registries（我的注册表）`被选中然后点击<b>Stress Level Zero</b>菜单下的`Marrow SDK`。
 
 ![myregistries](./Images/UnityProjectModules/my_registries_install.png)
 
-- Click Install.  This will install all three <b>Stress Level Zero</b> packages.  Please be patient as this process may take some time.
+- 点击安装。这将安装所有<b>Stress Level Zero</b>包。耐心等，下载可能需要一些时间。如果报错试试关闭代理或前往系统环境变量添加`HTTP_PROXY`和`HTTPS_PROXY`输入`http://你的电脑IP:代理端口`添加你的代理。
 
-- That's it!  No manual verification process is required.
+- 就是这样！不需要手动验证过程。
