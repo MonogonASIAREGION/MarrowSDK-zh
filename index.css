@@ -1,0 +1,77 @@
+body {
+    overflow: hidden;
+    background-image: url(https://static.wikia.nocookie.net/boneworks/images/2/2e/Bonelab_billboard.png);
+    font-weight: bold;
+    font-family: 'Harmony OS Sans SC', Consolas, sans-serif;
+}
+
+.main {
+    animation: body-load forwards 2s cubic-bezier(0.16, 1, 0.3, 1);
+
+    filter: blur(10px);
+    position: absolute;
+    overflow: hidden;
+
+    width: 100%;
+    height: 101%;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(2, 5, 14);
+
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo > p {
+    margin: auto;
+    font-family: "Harmony OS Sans SC";
+    font-size: 3.5rem;
+    color: white;
+    filter:drop-shadow(0 0 0.1rem red);
+    user-select: none;
+    text-align: right;
+}
+
+.selections {
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.selection-button {
+    z-index: 10;
+    border-radius: 10px;
+    padding: 1px 1.5rem;
+    
+    mask-image: linear-gradient(white, white);
+}
+
+.selection-button > a {
+    margin: auto;
+    color: white;
+
+    text-align: center;
+
+    text-decoration: none;
+    user-select: none;
+}
+
+.selection-button > a:hover {
+    color: gray;
+}
+
+@keyframes body-load {
+    from {
+        filter: blur(10px);
+        opacity: 0%;
+    }
+    to {
+        filter: blur(0px);
+        opacity: 100%
+    }
+}
