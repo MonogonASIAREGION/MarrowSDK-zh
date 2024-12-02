@@ -1,27 +1,27 @@
 # MarrowSDK
-Welcome to the MarrowSDK Wiki.  This is a public resource containing usage documentation for the MarrowSDK.
-
-## Creating Marrow Content
-- [Project Setup](ProjectSetup.md)
-- [Getting Started](#getting-started)
-- [Creating a Pallet / Crates / Datacards](PalletsAndCrates.md)
-  - [Spawnable Crate](Spawnables.md) - Spawn vanilla Bonelab items with the Bonelab Spawnable Pallet, spawn custom items into levels
-  - [Avatar Crate](Avatars.md) - Create and play as a custom avatar
-  - [Level Crate](Levels.md) - Design a custom Bonelab level
-  - [Bone Tag Data Card](BoneTags.md) - Digital data used to reference the Player and other items, used to organize crates, etc.
-  - [Mono Disc Data Card](MonoDiscs.md) - Reference digital audio data
-- [Zones](Zones.md)
-  - [Zone Links](ZoneLinks.md)
-  - [Zone Events](ZoneEvents.md)
-  - [Zone Load Level](ZoneLoadLevel.md)
-- [ZoneLinkItems](ZoneLinkItems.md)
-  - [Zone Music](ZoneMusic.md)
-  - [Zone Ambience](ZoneAmbience.md)
-- [Pallet Packing / Mod Installation](BuildPallet.md)
-- [Mod Repositories](ModRepositories.md)
-- [Developer Mode](DeveloperMode.md)
+欢迎来到MarrowSDK中文Wiki。这是一个包含中文翻译版MarrowSDK使用文档的公共资源站。
+在浏览时记得关闭浏览器机翻，可能会破坏文档的排版。
+## 创建Marrow内容
+- [项目配置](ProjectSetup.md)
+- [入门](#入门)
+- [创建Pallet托盘、Crates板条箱、Datacards数据卡](PalletsAndCrates.md)
+  - [生成物板条箱](Spawnables.md)——使用Bonelab生成物托盘生成原版Bonelab物品，在关卡中生成自制物品
+  - [Avatar板条箱](Avatars.md)——创建和游玩自制Avatar
+  - [关卡板条箱](Levels.md)——设计自制Bonelab关卡
+  - [BoneTag数据卡](BoneTags.md)——用于引用玩家和其他物品或用于组织板条箱等的数字数据。
+  - [MonoDisc数据卡](MonoDiscs.md)——引用数字音频数据
+- [Zone区域](Zones.md)
+  - [区域链接](ZoneLinks.md)
+  - [区域事件](ZoneEvents.md)
+  - [区域加载关卡](ZoneLoadLevel.md)
+- [区域链接物品](ZoneLinkItems.md)
+  - [区域音乐](ZoneMusic.md)
+  - [区域环境音](ZoneAmbience.md)
+- [托盘打包与模组安装](BuildPallet.md)
+- [模组存储库](ModRepositories.md)
+- [开发者模式](DeveloperMode.md)
 - [UltEvents](UltEvents.md)
-- [Sharing Packed Content](SharingPackedContent.md)
+- [共享已打包内容](SharingPackedContent.md)
 
 
 Project Setup
@@ -29,7 +29,7 @@ Project Setup
 Watch the step-by-step <b>MarrowSDK [Project Setup Guide](https://www.youtube.com/watch?v=U5jynJcDjvo)</b>, the <b>[Getting Started Guide](https://www.youtube.com/watch?v=M4B0TOG-b94)</b> on YouTube or follow the written <b>[Project Setup](ProjectSetup.md)</b> guide.
 
 
-Getting Started
+入门
 ---
 
 - On first launch, until you've created a Pallet, the editor will display a <i>Getting Started</i> window that will guide you through ensuring the SDK has <i>automatically</i> detected your game installation folder.  If not, the Game Install Locator will provide several options to find it.
