@@ -64,3 +64,5 @@ com.unity.shadergraph
 - 点击安装。这将安装所有<b>Stress Level Zero</b>包。耐心等，下载可能需要一些时间。如果报错试试关闭代理或前往系统环境变量添加`HTTP_PROXY`和`HTTPS_PROXY`输入`http://你的电脑IP:代理端口`添加你的代理。
 
 - 就是这样！不需要手动验证过程。
+
+<b>[返回MarrowSDKWiki主页](https://monogonasiaregion.github.io/MarrowSDK-zh/)</b>
