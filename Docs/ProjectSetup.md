@@ -1,6 +1,5 @@
-# 项目配置
-
 <b>[返回MarrowSDKWiki主页](https://monogonasiaregion.github.io/MarrowSDK-zh/)</b>
+# 项目配置
 
 要求
 ---
